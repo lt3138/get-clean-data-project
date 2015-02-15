@@ -20,11 +20,23 @@ You should create one R script called run_analysis.R that does the following.
 
 ## Procedure for Project
 1.  Download source data zip file for the project from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and unzip it.
-2.  Perform step 1 of the project assignment by:
+2.  Perform "Merges the training and the test sets to create one data set" by:
 
     a. For the test sample data, read the subject data, X data, and Y data into data frames, merge them and label them appropriately in a test dataframe.
 
     b. For the train sample data, read the subject data, X data, and Y data into data frames, merge them and label them appropriately in a train dataframe.
     
-    c. Merge the test dataframe and train dataframe into a single dataframe.
+    c. Merge the test dataframe and train dataframe into a single dataframe, called _theDataSet_.
+    
+3.  Perform "Extracts only the measurements on the mean and standard deviation for each measurement" by:
+
+    a. Determine the rows of the feature dataframes that contain the text "mean()" and "std()".
+    
+    b. Extract all columns from _theDataSet_ that maps to all of the rows from step above and save it in the _meanStdDF_ dataframe.
+
+4.  Perform "Uses descriptive activity names to name the activities in the data set" by:
+
+    a. Read the activity_labels.txt into a dataframe.  (The activity names are in the activity_labels.txt)
+    
+    b. Join it with the _meanStdDF_ dataframe. 
 
