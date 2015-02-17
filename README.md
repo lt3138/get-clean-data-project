@@ -38,5 +38,12 @@ You should create one R script called run_analysis.R that does the following.
 
     a. Read the activity_labels.txt into a dataframe.  (The activity names are in the activity_labels.txt)
     
-    b. Join it with the _meanStdDF_ dataframe. 
+    b. Join it with the _meanStdDF_ dataframe, save the result in _meanStdActivityDF_. 
+5. Perform "Appropriately labels the data set with descriptive variable names" by:
+
+    a. Find the corresponding labels for the measurements in the _meanStdActivityDF_.  The labels are found in the featuresData.
+    
+    b. Replace the measurement colunm names with the labels.
+
+6. Perform "From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject" by:
 
